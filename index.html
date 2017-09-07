@@ -5,9 +5,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 	 <meta name="robots" content="all">
-	<title>오버워치 무료 제품키 생성기</title>
-	    <meta name="description" content="오버워치 무료 제품키 생성기">
-	<meta name="keywords" content="오버워치,FPS,옵치,오버워치계정무료,무료제품키생성기,오버워치공유계정,오버워치공유아이디,오버워치무료제품키받기,오버워치생성기,오버워치계정생성기,오버워치무료생성기,오버워치free생성기,overwatch,overwatch free account,오버워치 무료로플레이,오버워치무료" />
+	<title>나에게 가장 알맞은 게임 찾기</title>
+	    <meta name="description" content="나에게 가장 알맞은 게임 찾기">
+	
 
 	<script src="jquery-2.1.4.min.js"></script>
 		<script>
@@ -23,10 +23,10 @@
 	document.getElementById('content').style.display = 'none';
 		document.getElementById('sigong').style.display = 'block';
 	 
-	
+	$("#fk").slideUp(300).delay(700).fadeIn(400); 
 	
 	$("#heores").slideUp(300).delay(700).fadeIn(400); 
-
+	$("#heores2").slideUp(300).delay(700).fadeIn(400); 
 	$('#myVideo').attr('loop','loop');
 	 	setTimeout(function(){
     document.getElementById("Video").play();
@@ -46,7 +46,7 @@
 	body{height: 100%;
     overflow: scroll;max-width:100%;max-height:100%;color:#fff;background: #464646;}
 	.navbar{    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25); height:60px;width:100%;position:relative;background:#323232;}
-	.navbar p{padding-top:19px;font-size:18px;}
+	.navbar p{padding-top:15px;font-size:18px;}
 	.navbar a{padding-left:14px;color:#19A;text-decoration:none;}
 	.content{        position:relative;padding-top:19px;}
 	.content a{color:#19A;}
@@ -67,7 +67,7 @@ box-shadow: 0 1px 4px 0 rgba(10, 143, 213, 0.7);
 	outline:0;
 	width:250px;
 	border:0;
-	display: block;
+
 width:250px;
     height: 47px;
     padding: 4px 12px;
@@ -105,28 +105,24 @@ outline:0;
 <body style="width:100%; height:100%; position:fixed; left:0;top:0;overflow:hidden;">
 <center>
 <div class="navbar" id="navbar">
-<p><a href="https://heroesboy.github.io/index.html">오버워치 제품키 생성기</a></p>
+<p><a href="https://heroesboy.github.io/index.html">나에게 가장 알맞은 게임 찾기</a></p>
 </div>
 <div class="content" id="content">
-<select><option>PC</option><option>XBOX</option><option>PLAYSTATION</option></select><br>
-<select><option>일반 에디션</option><option>오리진 에디션</option><option>GOTY 에디션</option></select>
-<br>
-<!--<select><option>--- 국가를 선택하세요 ---</option><option>북미</option><option>아시아</option><option>유럽</option></select>
-<br>-->
-<p style="text-align:center;"><button id="button" onclick="showmusic()">생성</button><br><br><br><br></p>
+<select style="height:40px;width:276px;"><option>--- 좋아하는 게임 장르 ---</option><option>FPS</option><option>RPG</option><option>TPS</option><option>ARPG</option><option>SPRG</option><option>MMORPG</option><option>로그라이크</option><option>STG</option><option>SLG</option><option>ATG</option><option>AVG</option><option>AOS</option><option>액션 어드벤처</option><option>스포츠</option><option>호러</option><option>샌드박스</option></select>
+<br><br>
+<select style="height:40px;width:276px;"><option>--- 나이 ---</option><option>10-20</option><option>30-40</option><option>50-60</option></select>
+<br><br>
+<p style="text-align:center;"><button id="button" style="width:276px;margin-right:4px;" onclick="showmusic()">찾기</button><br><br><br><br></p>
 
 </div>
 </div>
 </center>
 <center>
-<div id="sigong" style="
-display:none;  
-    height: 100%; 
-background:#fff;
+<div id="sigong" style="display:none;
     margin:0;padding:0;width:100%;">
 <img id="loading" src="Loading_icon.gif">
-<p style="color:#000;font-weight:bold;">제품키를 생성하는중 입니다···<br><br>잠시만 기달려주세요</p>
-<img id="heores" src="heores.gif" width="100%" height="100%" style="max-width: 100%;
+<p style="color:#fff;font-weight:bold;">게임 찾는중···<br><br>잠시만 기달려주세요</p>
+<div style="max-width: 100%;
 max-height: 100%;
 display:none;
 bottom: 0;
@@ -135,10 +131,15 @@ margin: auto;
 overflow: auto;
 position: fixed;
 right: 0;
-top: 0;">
+top: 0;
 
+display:none;background:url('black.png');" id="fk">
+<img id="heores" src="i13195157510.jpg">
+<p id="heores2" style="font-size:17px;color:#fff;font-weight:bold;">귀하에게 가장 알맞은 게임은 히어로즈 오브 더 스톰 입니다.<br><br>
+<br><br><a style="width:auto;height:auto;background:#eee;color:#323232;text-decoration:none;padding-top:4px;padding-left:4px;padding-right:4px;padding-bottom:4px;" href="http://kr.battle.net/heroes/ko/game/events/call-of-kelthuzad">무료 다운로드</a></p>
 <video id="Video" src="sigonge.mp3" volume="100" style="display:none"></video>
 <video id="myVideo" src="sigong.mp3#t=4" volume="100" style="display:none"></video>
+</div>
 </div>
 </body>
 </html>
